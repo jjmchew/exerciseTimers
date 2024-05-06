@@ -14,7 +14,7 @@ app.get('/ping', (_req, res) => {
 });
 
 app.get('/workouts', (_req, res) => {
-  res.send(db);
+  res.send(db.workouts);
 });
 
 app.listen(PORT, () => {
