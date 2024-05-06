@@ -1,6 +1,6 @@
 import { Workout, Activity } from "../types.ts";
 // import db from '../../db.json';
-const BASE_URL = 'http://localhost:3001/workouts';
+const BASE_URL = 'http://localhost:3003/workouts';
 
 interface JSONActivity {
   name: string,
