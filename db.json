@@ -1,0 +1,113 @@
+{
+  "workouts": [
+    {
+      "id": "1",
+      "name": "physio-activation",
+      "total": "780",
+      "activities": [
+        { "name": "warm-up", "details": "lunge/rotations\n90/90\ncat/cow\nsquats", "secs": "480" },
+        { "name": "bridges", "secs": "60" },
+        { "name": "band rotations", "secs": "60" },
+        { "name": "door band", "secs": "60" },
+        { "name": "chops", "secs": "60" },
+        { "name": "adductors", "secs": "60" }
+      ]
+    },
+    {
+      "id": "rings-warm-up",
+      "name": "rings warm-up",
+      "total": "250",
+      "activities": [
+        { "name": "shaking", "secs": "20" },
+        { "name": "hip circles", "secs": "45" },
+        { "name": "arm pull backs", "secs": "30" },
+        { "name": "towel pulls", "secs": "30" },
+        { "name": "shoulder side raises", "secs": "15" },
+        { "name": "elbow pulldowns", "secs": "15" },
+        { "name": "elbow circles", "secs": "15" },
+        { "name": "wrist stretches", "secs": "60" },
+        { "name": "shoulders / arms shaking", "secs": "20" }
+      ]
+    },
+    {
+      "id": "rings-push",
+      "name": "rings push",
+      "total": "810",
+      "activities": [
+        { "name": "top position 1", "secs": "15"},
+        { "name": "rest", "secs": "30"},
+        { "name": "top position 2", "secs": "15"},
+        { "name": "rest", "secs": "30"},
+        { "name": "top position 3", "secs": "15"},
+        { "name": "rest", "secs": "30"},
+        { "name": "assisted dips 1", "secs": "30"},
+        { "name": "rest", "secs": "30"},
+        { "name": "assisted dips 2", "secs": "30"},
+        { "name": "rest", "secs": "30"},
+        { "name": "assisted dips 3", "secs": "30"},
+        { "name": "rest", "secs": "30"},
+        { "name": "assisted push-ups 1", "secs": "30"},
+        { "name": "rest", "secs": "30"},
+        { "name": "assisted push-ups 2", "secs": "30"},
+        { "name": "rest", "secs": "30"},
+        { "name": "assisted push-ups 3", "secs": "30"},
+        { "name": "rest", "secs": "30"},
+        { "name": "plank hold 1", "secs": "15"},
+        { "name": "rest", "secs": "30"},
+        { "name": "plank hold 2", "secs": "15"},
+        { "name": "rest", "secs": "30"},
+        { "name": "plank hold 3", "secs": "15"},
+        { "name": "rest", "secs": "30"},
+        { "name": "mountain climbers 1", "secs": "30"},
+        { "name": "rest", "secs": "30"},
+        { "name": "mountain climbers 2", "secs": "30"},
+        { "name": "rest", "secs": "30"},
+        { "name": "mountain climbers 3", "secs": "30"},
+        { "name": "rest", "secs": "30"}
+      ]
+    },
+    {
+      "id": "2",
+      "name": "test1",
+      "total": "16",
+      "activities": [
+        { "name": "shake", "secs": "3" },
+        { "name": "arms up/back", "secs": "3" },
+        { "name": "towel pulls", "secs": "2" }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "test2",
+      "total": "600",
+      "activities": [
+        { "name": "Recovery", "secs": "600"}
+      ]
+    },
+    {
+      "id": "4",
+      "name": "test3",
+      "total": "3600",
+      "activities": [
+        { "name": "01:00:00", "secs": "3600"}
+      ]
+    },
+    {
+      "id": "5",
+      "name": "test4",
+      "total": "2",
+      "activities": [
+        { "name": "00:00:02", "secs": "2"}
+      ]
+    },
+    {
+      "id": "6",
+      "name": "test5",
+      "total": "4",
+      "activities": [
+        { "name": "part1", "secs": "2"},
+        { "name": "part2", "secs": "2"}
+      ]
+    }
+  ]
+}
