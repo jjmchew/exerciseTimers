@@ -13,10 +13,10 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "use-sound": "^4.0.1"
+    "use-sound": "^4.0.1",
+    "json-server": "^1.0.0-alpha.23"
   },
   "devDependencies": {
-    "json-server": "^1.0.0-alpha.23",
     "@types/json-server": "^0.14.7",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
