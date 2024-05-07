@@ -1,8 +1,9 @@
 import { Workout, Activity } from "../types.ts";
 // import db from '../../db.json';
-const BASE_URL = process.env.NODE_ENV === 'production'
-  ? 'https://80087355.xyz/workouts'
-  : 'http://localhost:3003/workouts';
+// const BASE_URL = process.env.NODE_ENV === 'production'
+//   ? 'https://80087355.xyz/workouts'
+//   : 'http://localhost:3003/workouts';
+const BASE_URL = 'https://80087355.xyz/workouts';
 
 interface JSONActivity {
   name: string,
@@ -41,5 +42,4 @@ const getData = async (): Promise<Workout[]> => {
 };
 
 export default { getData };
-
 

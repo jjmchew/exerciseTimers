@@ -67,6 +67,31 @@
       ]
     },
     {
+      "id": "rings-pull",
+      "name": "rings pull",
+      "total": "",
+      "activities": [
+        { "name": "reverse rows 1", "secs": "30" },
+        { "name": "rest", "secs": "30" },
+        { "name": "reverse rows 2", "secs": "30" },
+        { "name": "rest", "secs": "30" },
+        { "name": "reverse rows 3", "secs": "30" },
+        { "name": "rest", "secs": "30" },
+        { "name": "assisted pull-ups 1", "secs": "40" },
+        { "name": "rest", "secs": "60" },
+        { "name": "assisted pull-ups 2", "secs": "40" },
+        { "name": "rest", "secs": "60" },
+        { "name": "assisted pull-ups 3", "secs": "40" },
+        { "name": "rest", "secs": "60" },
+        { "name": "jump to inverted hang 1", "secs": "30" },
+        { "name": "rest", "secs": "40" },
+        { "name": "jump to inverted hang 2", "secs": "30" },
+        { "name": "rest", "secs": "40" },
+        { "name": "jump to inverted hang 3", "secs": "30" },
+        { "name": "rest", "secs": "40" }
+      ]
+    },
+    {
       "id": "2",
       "name": "test1",
       "total": "16",
