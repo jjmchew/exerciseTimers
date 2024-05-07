@@ -69,7 +69,7 @@
     {
       "id": "rings-pull",
       "name": "rings pull",
-      "total": "",
+      "total": "690",
       "activities": [
         { "name": "reverse rows 1", "secs": "30" },
         { "name": "rest", "secs": "30" },
