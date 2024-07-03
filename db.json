@@ -30,8 +30,8 @@
       ]
     },
     {
-      "id": "rings-push",
-      "name": "rings push",
+      "id": "P1-rings-push",
+      "name": "P1-rings push",
       "total": "810",
       "activities": [
         { "name": "top position 1", "secs": "15"},
@@ -67,8 +67,8 @@
       ]
     },
     {
-      "id": "rings-pull",
-      "name": "rings pull",
+      "id": "P1-rings-pull",
+      "name": "P1-rings pull",
       "total": "690",
       "activities": [
         { "name": "reverse rows 1", "secs": "30" },
@@ -92,29 +92,65 @@
       ]
     },
     {
-      "id": "2",
-      "name": "test1",
-      "total": "16",
+      "id": "p2-rings-push",
+      "name": "p2-rings push",
+      "total": "810",
       "activities": [
-        { "name": "shake", "secs": "3" },
-        { "name": "arms up/back", "secs": "3" },
-        { "name": "towel pulls", "secs": "2" }
+        { "name": "top position tuck hold 1", "secs": "15" },
+        { "name": "rest", "secs": "30" },
+        { "name": "top position tuck hold 2", "secs": "15" },
+        { "name": "rest", "secs": "30" },
+        { "name": "top position tuck hold 3", "secs": "15" },
+        { "name": "rest", "secs": "30" },
+        { "name": "baby muscle up 1", "secs": "45" },
+        { "name": "rest", "secs": "60" },
+        { "name": "baby muscle up 2", "secs": "45" },
+        { "name": "rest", "secs": "60" },
+        { "name": "baby muscle up 3", "secs": "45" },
+        { "name": "rest", "secs": "60" },
+        { "name": "assisted tuck shoulder stand 1", "secs": "60" },
+        { "name": "rest", "secs": "60" },
+        { "name": "assisted tuck shoulder stand 2", "secs": "60" },
+        { "name": "rest", "secs": "60" },
+        { "name": "assisted tuck shoulder stand 3", "secs": "60" },
+        { "name": "rest", "secs": "60" }
       ]
     },
     {
-      "id": "3",
-      "name": "test2",
-      "total": "600",
+      "id": "p2-rings-pull",
+      "name": "p2-rings pull",
+      "total": "810",
       "activities": [
-        { "name": "Recovery", "secs": "600"}
+        { "name": "reverse pull-up 1", "secs": "40"},
+        { "name": "rest", "secs": "60"},
+        { "name": "reverse pull-up 2", "secs": "40"},
+        { "name": "rest", "secs": "60"},
+        { "name": "reverse pull-up 3", "secs": "40"},
+        { "name": "rest", "secs": "60"},
+        { "name": "inverted tuck roll chin-up 1", "secs": "40"},
+        { "name": "rest", "secs": "60"},
+        { "name": "inverted tuck roll chin-up 2", "secs": "40"},
+        { "name": "rest", "secs": "60"},
+        { "name": "inverted tuck roll chin-up 3", "secs": "40"},
+        { "name": "rest", "secs": "60"},
+        { "name": "skin the cat 1", "secs": "30"},
+        { "name": "rest", "secs": "40"},
+        { "name": "skin the cat 2", "secs": "30"},
+        { "name": "rest", "secs": "40"},
+        { "name": "skin the cat 3", "secs": "30"},
+        { "name": "rest", "secs": "40"}
       ]
     },
     {
-      "id": "4",
-      "name": "test3",
-      "total": "3600",
+      "id": "rings-cool-down",
+      "name": "rings cool down",
+      "total": "210",
       "activities": [
-        { "name": "01:00:00", "secs": "3600"}
+        { "name": "lounge chair", "secs": "45"},
+        { "name": "kneeling overhead stretch", "secs": "45"},
+        { "name": "wrist stretches", "secs": "60"},
+        { "name": "shoulder l-arm stretch - L", "secs": "30"},
+        { "name": "shoulder l-arm stretch - R", "secs": "30"}
       ]
     },
     {
