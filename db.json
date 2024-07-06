@@ -154,20 +154,79 @@
       ]
     },
     {
-      "id": "5",
-      "name": "test4",
-      "total": "2",
+      "id": "run-1-4",
+      "name": "Run-1:4",
+      "total": "1800",
       "activities": [
-        { "name": "00:00:02", "secs": "2"}
+        { "name": "run 1", "secs": "60"},
+        { "name": "walk 1", "secs": "240"},
+        { "name": "run 2", "secs": "60"},
+        { "name": "walk 2", "secs": "240"},
+        { "name": "run 3", "secs": "60"},
+        { "name": "walk 3", "secs": "240"},
+        { "name": "run 4", "secs": "60"},
+        { "name": "walk 4", "secs": "240"},
+        { "name": "run 5", "secs": "60"},
+        { "name": "walk 5", "secs": "240"},
+        { "name": "run 6", "secs": "60"},
+        { "name": "walk 6", "secs": "240"}
       ]
     },
     {
-      "id": "6",
-      "name": "test5",
-      "total": "4",
+      "id": "run-2-3",
+      "name": "Run-2:3",
+      "total": "1800",
       "activities": [
-        { "name": "part1", "secs": "2"},
-        { "name": "part2", "secs": "2"}
+        { "name": "run 1", "secs": "120"},
+        { "name": "walk 1", "secs": "180"},
+        { "name": "run 2", "secs": "120"},
+        { "name": "walk 2", "secs": "180"},
+        { "name": "run 3", "secs": "120"},
+        { "name": "walk 3", "secs": "180"},
+        { "name": "run 4", "secs": "120"},
+        { "name": "walk 4", "secs": "180"},
+        { "name": "run 5", "secs": "120"},
+        { "name": "walk 5", "secs": "180"},
+        { "name": "run 6", "secs": "120"},
+        { "name": "walk 6", "secs": "180"}
+      ]
+    },
+    {
+      "id": "run-3-2",
+      "name": "Run-3:2",
+      "total": "1800",
+      "activities": [
+        { "name": "run 1", "secs": "180"},
+        { "name": "walk 1", "secs": "120"},
+        { "name": "run 2", "secs": "180"},
+        { "name": "walk 2", "secs": "120"},
+        { "name": "run 3", "secs": "180"},
+        { "name": "walk 3", "secs": "120"},
+        { "name": "run 4", "secs": "180"},
+        { "name": "walk 4", "secs": "120"},
+        { "name": "run 5", "secs": "180"},
+        { "name": "walk 5", "secs": "120"},
+        { "name": "run 6", "secs": "180"},
+        { "name": "walk 6", "secs": "120"}
+      ]
+    },
+    {
+      "id": "run-4-1",
+      "name": "Run-4:1",
+      "total": "1800",
+      "activities": [
+        { "name": "run 1", "secs": "240"},
+        { "name": "walk 1", "secs": "60"},
+        { "name": "run 2", "secs": "240"},
+        { "name": "walk 2", "secs": "60"},
+        { "name": "run 3", "secs": "240"},
+        { "name": "walk 3", "secs": "60"},
+        { "name": "run 4", "secs": "240"},
+        { "name": "walk 4", "secs": "60"},
+        { "name": "run 5", "secs": "240"},
+        { "name": "walk 5", "secs": "60"},
+        { "name": "run 6", "secs": "240"},
+        { "name": "walk 6", "secs": "60"}
       ]
     }
   ]
