@@ -228,6 +228,27 @@
         { "name": "run 6", "secs": "240"},
         { "name": "walk 6", "secs": "60"}
       ]
+    },
+    {
+      "id": "ScalenePhysio",
+      "name": "ScalenePhysio",
+      "total": "130",
+      "activities": [
+        { "name": "Scalene stretch 1", "secs": "30"},
+        { "name": "rest", "secs": "10"},
+        { "name": "Scalene stretch 2", "secs": "30"},
+        { "name": "rest", "secs": "10"},
+        { "name": "Trunk extension 1", "secs": "5"},
+        { "name": "rest", "secs": "5"},
+        { "name": "Trunk extension 2", "secs": "5"},
+        { "name": "rest", "secs": "5"},
+        { "name": "Trunk extension 3", "secs": "5"},
+        { "name": "rest", "secs": "5"},
+        { "name": "Trunk extension 4", "secs": "5"},
+        { "name": "rest", "secs": "5"},
+        { "name": "Trunk extension 5", "secs": "5"},
+        { "name": "rest", "secs": "5"}
+      ]
     }
   ]
 }
