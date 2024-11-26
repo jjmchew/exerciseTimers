@@ -1,0 +1,13 @@
+[Unit]
+Description=exerciseTimers backend
+After=network-online.target
+
+[Service]
+Type=simple
+Restart=always
+Environment=NODE_ENV=production
+WorkingDirectory=/root/apps/exerciseTimers
+ExecStart=/root/.nvm/versions/node/v20.11.0/bin/node /root/apps/exerciseTimers/server.js
+
+[Install]
+WantedBy=multi-user.target

@@ -1,5 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
+// @ts-ignore
 import useSound from 'use-sound';
+import { useState, useEffect, useRef } from 'react';
 import Bell from '../assets/bell.wav';
 import utils from '../utils.ts';
 import Multiline from './Multiline.tsx';
