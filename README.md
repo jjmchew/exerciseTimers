@@ -9,6 +9,7 @@
 - no effort spent on UI design
 - coding focus ended up being on managing timers (set, start / pause, autoRun, etc.)
 
-## Todos
-- quick code to incorporate environment variables into code to facilitate local testing and remote deployment (api.ts: setting of API URL) had unresolved type errors with TS and was removed
-
+## To deploy
+- used `pm2 start server.js`
+- make sure nginx config allows root access to domain to return files (serve static react assets)
+- create alternate location to /workouts to proxy pass to localhost:3003
