@@ -308,29 +308,22 @@
     {
       "id": "HipPhysio-light",
       "name": "HipPhysio-light",
-      "total": "900",
+      "total": "600",
       "activities": [
         { "name": "lunge stretch", "secs": "40" },
         { "name": "90-90", "secs": "40" },
-        { "name": "squat (warm-up)", "secs": "40" },
         { "name": "side-to-side plank", "secs": "60" },
         { "name": "SQUAT", "secs": "60" },
-        { "name": "rest", "secs": "30" },
         { "name": "doorway quad stretch", "secs": "45" },
-        { "name": "SPLIT SQUAT - L", "secs": "60" },
-        { "name": "SPLIT SQUAT - R", "secs": "60" },
-        { "name": "rest", "secs": "40" },
+        { "name": "SPLIT SQUAT - L", "secs": "30" },
+        { "name": "SPLIT SQUAT - R", "secs": "30" },
         { "name": "HINGE (w/ dowel)", "secs": "60" },
         { "name": "RDL - L", "secs": "30" },
         { "name": "RDL - R", "secs": "30" },
-        { "name": "rest", "secs": "40" },
         { "name": "plank cat/cow", "secs": "45" },
-        { "name": "rest", "secs": "30" },
         { "name": "bench hip march", "secs": "60" },
         { "name": "rest", "secs": "10" },
-        { "name": "hollow-body progression", "secs": "60" },
-        { "name": "rest", "secs": "30" },
-        { "name": "shake-out", "secs": "30" }
+        { "name": "hollow-body progression", "secs": "60" }
       ]
     }
   ]
