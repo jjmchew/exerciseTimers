@@ -4,6 +4,16 @@ p {
   padding: 0;
 }
 
+section {
+  border-top: 1px solid lightgrey;
+}
+
+button {
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+
 .selectable {
   cursor: pointer;
 }
@@ -12,16 +22,21 @@ p {
   font-weight: bold;
   margin-top: 1rem;
 }
-
 .actDetails {
   margin: 0.5rem 0.5rem;
+}
+
+.centerDetails {
+  text-align: center;
 }
 
 .currentName {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
+  color: lightgrey;
 }
+
 .nextDesc {
   font-size: 1.5rem;
   text-align: center;
@@ -29,10 +44,21 @@ p {
 }
 
 .currentTime {
-  font-size: 6rem;
+  font-size: 2rem;
+  color: lightgrey;
   text-align: center;
+  min-width: 600px;
 }
 
 .workoutTime {
   margin-left: 2ch;
+}
+
+.selectedTime {
+  color: black;
+  font-size: 6rem;
+}
+
+.selectedName {
+  color: black;
 }

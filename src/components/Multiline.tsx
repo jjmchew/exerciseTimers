@@ -1,24 +1,24 @@
 interface MultilineProps {
   str: string | undefined;
+  center?: boolean;
 }
 
-const Multiline = (
-  { str }: MultilineProps
-) => {
+const Multiline = ({ str, center = false }: MultilineProps) => {
   if (!str) return null;
 
-  const lines = str.split('\n');
+  let classes = [""];
+  if (center) classes.push("centerDetails");
+
+  const lines = str.split("\n");
   const display = lines.map((str: string, idx: number) => {
-    return (<p key={str + idx}>- {str}</p>);
+    return (
+      <p className={classes.join(" ")} key={str + idx}>
+        - {str}
+      </p>
+    );
   });
 
-  return (
-    <>
-      {display}
-    </>
-  );
+  return <>{display}</>;
 };
 
 export default Multiline;
-
-
