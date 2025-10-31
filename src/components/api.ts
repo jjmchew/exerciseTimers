@@ -1,25 +1,24 @@
 import { Workout, Activity } from "../types.ts";
-// import db from '../../db.json';
-// const BASE_URL = process.env.NODE_ENV === 'production'
-//   ? 'https://80087355.xyz/workouts'
-//   : 'http://localhost:3003/workouts';
-const BASE_URL = 'https://80087355.xyz/workouts';
+
+const BASE_URL = import.meta.env.PROD
+  ? "https://80087355.xyz/workouts"
+  : "http://localhost:3003/workouts";
 
 interface JSONActivity {
-  name: string,
-  secs: string,
-  details?: string,
+  name: string;
+  secs: string;
+  details?: string;
 }
 
 interface JSONWorkout {
-  id: string,
-  name: string,
-  total: string,
-  activities: JSONActivity[]
+  id: string;
+  name: string;
+  total: string;
+  activities: JSONActivity[];
 }
 
 const convertActivities = (activities: JSONActivity[]): Activity[] => {
-  const newObj = activities.map(obj => {
+  const newObj = activities.map((obj) => {
     return {
       ...obj,
       secs: parseInt(obj.secs, 10),
@@ -37,9 +36,8 @@ const getData = async (): Promise<Workout[]> => {
       ...obj,
       total: parseInt(obj.total, 10),
       activities: convertActivities(obj.activities),
-    }
+    };
   });
 };
 
 export default { getData };
-
