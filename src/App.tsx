@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
-import { Workout, Activity } from "./types.ts";
+import { Workout } from "./types.ts";
 import API from "./components/api.ts";
 import WorkoutSelect from "./components/WorkoutSelect.tsx";
-import TimersList from "./components/TimersList.tsx";
+import TimersList from "./components/TimersList/TimersList.tsx";
 import utils from "./utils.ts";
 import "./App.css";
 
 function App() {
   const [workouts, setWorkouts] = useState<Workout[] | null>(null);
-  const [selected, setSelected] = useState<string>("");
-  const activities: Activity[] | null = utils.getActivities(selected, workouts);
+  const [selected, setSelected] = useState<string | null>(null);
+  const workout: Workout | null = utils.getWorkout(selected, workouts);
 
   useEffect(() => {
     if (workouts === null) {
@@ -17,17 +17,31 @@ function App() {
     }
   }, []);
 
-  const handleSelect = (e: string) => {
-    setSelected(e);
+  const handleSelect = (workoutId: string | null) => {
+    setSelected(workoutId);
   };
 
   if (!workouts) return <p>loading...</p>;
 
-  return (
+  const mainPage = (
     <>
       <h1>Exercise timers</h1>
       <WorkoutSelect workouts={workouts} handleSelect={handleSelect} />
-      <TimersList key={selected} activities={activities} />
+    </>
+  );
+
+  return (
+    <>
+      {workout ? (
+        <TimersList
+          key={selected}
+          workoutName={workout.name}
+          activities={workout.activities}
+          onDeselect={() => handleSelect(null)}
+        />
+      ) : (
+        mainPage
+      )}
     </>
   );
 }

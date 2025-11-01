@@ -1,13 +1,20 @@
 import { useState, useEffect, useRef } from "react";
-import { Activity } from "../types.ts";
-import Timer from "./Timer.tsx";
-import PlayPauseButton from "./PlayPauseButton/PlayPauseButton.tsx";
+import { Activity } from "../../types.ts";
+import Timer from "../Timer.tsx";
+import PlayPauseButton from "../PlayPauseButton/PlayPauseButton.tsx";
+import styles from "./TimersList.module.css";
 
 interface TimersListProps {
+  workoutName: string;
   activities: Activity[] | null;
+  onDeselect: () => void;
 }
 
-const TimersList = ({ activities }: TimersListProps) => {
+const TimersList = ({
+  workoutName,
+  activities,
+  onDeselect,
+}: TimersListProps) => {
   const [currentTimerIdx, setCurrentTimerIdx] = useState<number>(0);
   const timerRefs = useRef<(HTMLElement | null)[]>([]);
   const [isRunning, setIsRunning] = useState<boolean>(false);
@@ -48,7 +55,7 @@ const TimersList = ({ activities }: TimersListProps) => {
     return currentTimerIdx === idx ? (
       <div
         key={clickTimestamp + idx.toString()}
-        className="timerRow"
+        className={styles.timerRow}
         onClick={() => handleTimerSelect(idx)}
       >
         <PlayPauseButton
@@ -69,12 +76,12 @@ const TimersList = ({ activities }: TimersListProps) => {
     ) : (
       <div
         key={clickTimestamp + idx.toString()}
-        className="timerRow"
+        className={styles.timerRow}
         onClick={() => handleTimerSelect(idx)}
       >
         <div
           key={"spacer" + clickTimestamp + idx.toString()}
-          className="buttonSpacer"
+          className={styles.buttonSpacer}
         ></div>
         <Timer
           key={"timer" + clickTimestamp + idx.toString()}
@@ -86,7 +93,15 @@ const TimersList = ({ activities }: TimersListProps) => {
     );
   });
 
-  return <>{listOfTimers}</>;
+  return (
+    <>
+      <div className={styles.backButton} onClick={onDeselect}>
+        {"< back"}
+      </div>
+      <h1 className={styles.timerName}>{workoutName}</h1>
+      {listOfTimers}
+    </>
+  );
 };
 
 export default TimersList;

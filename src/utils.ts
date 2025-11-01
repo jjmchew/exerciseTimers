@@ -1,13 +1,13 @@
 import { Activity, Workout } from "./types.ts";
 
-const getActivities = (
-  selected: string,
+const getWorkout = (
+  selected: string | null,
   workouts: Workout[] | null,
-): Activity[] | null => {
-  if (!workouts) return null;
+): Workout | null => {
+  if (!workouts || !selected) return null;
 
   const workout = workouts.filter((obj) => obj.id === selected);
-  if (workout.length !== 0) return workout[0].activities;
+  if (workout.length !== 0) return workout[0];
   else return null;
 };
 
@@ -29,4 +29,4 @@ const calculateTotal = (activities: Activity[]) => {
   return activities.reduce((total, current) => total + current.secs, 0);
 };
 
-export default { getActivities, displayTime, calculateTotal };
+export default { getWorkout, displayTime, calculateTotal };

@@ -1,0 +1,27 @@
+.timerName {
+  text-align: center;
+  margin-top: 0;
+  margin-left: var(--spacer-width);
+  font-weight: normal;
+  font-size: 4rem;
+  color: #666;
+}
+
+.timerRow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid lightgrey;
+}
+
+.buttonSpacer {
+  width: var(--spacer-width);
+}
+
+.backButton {
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+}
