@@ -416,6 +416,46 @@
         { "name": "decel jumps R", "secs": 60 },
         { "name": "shake-out", "secs": 60 }
       ]
+    },
+    {
+      "id": "HipPhysio-light_Oct2025",
+      "name": "HipPhysio-light(Oct2025)",
+      "activities": [
+        { "name": "lunge stretch", "secs": 25 },
+        { "name": "90-90", "secs": 30 },
+        { "name": "side-to-side plank (forearms) L", "secs": 10 },
+        { "name": "side-to-side plank (forearms) R", "secs": 10 },
+        { "name": "side-to-side plank (hands) L", "secs": 10 },
+        { "name": "side-to-side plank (hands) R", "secs": 10 },
+        { "name": "hip march", "secs": 35 },
+        { "name": "ROM squat", "secs": 35 },
+        { "name": "ROM RDL", "secs": 35 },
+        { "name": "SINGLE RDL *L", "secs": 15 },
+        { "name": "SINGLE RDL *R", "secs": 15 },
+        { "name": "rest", "secs": 5 },
+        { "name": "ROM seated leg march L", "secs": 10 },
+        { "name": "ROM seated leg march R", "secs": 10 },
+        { "name": "doorway stretch", "secs": 45 },
+        { "name": "Split squat L", "secs": 20 },
+        { "name": "Split squat R", "secs": 20 },
+        { "name": "copenhagen R", "secs": 10 },
+        { "name": "copenhagen L", "secs": 10 },
+        { "name": "rest", "secs": 15 },
+        { "name": "STRENGTH hip flexion *L", "secs": 15 },
+        { "name": "STRENGTH hip flexion *R", "secs": 15 },
+        { "name": "cat-cow (core only)", "secs": 10 },
+        { "name": "reverse crunch", "secs": 45 },
+        { "name": "hopping L1 ON", "secs": 10 },
+        { "name": "hopping L1 off", "secs": 10 },
+        { "name": "hopping L2 ON", "secs": 10 },
+        { "name": "hopping L2 off", "secs": 10 },
+        { "name": "hopping R1 ON", "secs": 10 },
+        { "name": "hopping R1 off", "secs": 10 },
+        { "name": "hopping R2 ON", "secs": 10 },
+        { "name": "hopping R2 off", "secs": 10 },
+        { "name": "decel jumps L", "secs": 30 },
+        { "name": "decel jumps R", "secs": 30 }
+      ]
     }
   ]
 }
