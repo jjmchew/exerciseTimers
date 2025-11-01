@@ -25,7 +25,6 @@ function useInterval(callback: any, delay: number | null) {
 }
 
 interface TimerProps {
-  handleClick: () => void;
   timer: {
     secs: number;
     name: string;
@@ -38,10 +37,7 @@ interface TimerProps {
 }
 
 const Timer = forwardRef<HTMLElement, TimerProps>(
-  (
-    { timer, isRunning = false, selected = false, nextTimer, handleClick },
-    ref,
-  ) => {
+  ({ timer, isRunning = false, selected = false, nextTimer }, ref) => {
     const { secs, name } = timer;
 
     const [count, setCount] = useState<number>(secs);
@@ -81,7 +77,7 @@ const Timer = forwardRef<HTMLElement, TimerProps>(
     }
 
     return (
-      <section ref={ref} onClick={handleClick}>
+      <section ref={ref}>
         <div className={nameClasses.join(" ")}>{name}</div>
         {details}
         <div className={timeClasses.join(" ")}>{utils.displayTime(count)}</div>
