@@ -4,10 +4,6 @@ p {
   padding: 0;
 }
 
-section {
-  border-top: 1px solid lightgrey;
-}
-
 button {
   font-size: 1rem;
   padding: 1rem;
@@ -47,7 +43,6 @@ button {
   font-size: 2rem;
   color: lightgrey;
   text-align: center;
-  min-width: 600px;
 }
 
 .workoutTime {
@@ -61,4 +56,16 @@ button {
 
 .selectedName {
   color: black;
+}
+
+.timerRow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid lightgrey;
+}
+
+.buttonSpacer {
+  width: 110px;
 }

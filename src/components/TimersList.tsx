@@ -23,32 +23,6 @@ const TimersList = ({ activities }: TimersListProps) => {
     el?.scrollIntoView({ behavior: "smooth", block: "center" });
   }, [currentTimerIdx]);
 
-  // adjust play-pause button position
-  useEffect(() => {
-    const buttonEl = buttonRef.current;
-    if (!buttonEl) return;
-
-    const updateButtonPosition = () => {
-      const timerEl = timerRefs.current[currentTimerIdx];
-      if (!timerEl) return;
-
-      const rect = timerEl.getBoundingClientRect();
-      buttonEl.style.position = "fixed";
-      buttonEl.style.top = `${rect.top + rect.height / 2 + 5}px`;
-      buttonEl.style.left = `12%`;
-      buttonEl.style.transform = "translate(-50%, -50%)";
-    };
-
-    updateButtonPosition();
-    window.addEventListener("scroll", updateButtonPosition, { passive: true });
-    window.addEventListener("resize", updateButtonPosition);
-
-    return () => {
-      window.removeEventListener("scroll", updateButtonPosition);
-      window.removeEventListener("resize", updateButtonPosition);
-    };
-  }, [currentTimerIdx]);
-
   if (!activities || currentTimerIdx > activities.length) return null;
 
   const nextTimer = () => {
@@ -64,43 +38,55 @@ const TimersList = ({ activities }: TimersListProps) => {
     setCurrentTimerIdx(idx);
   };
 
-  const handlePlayPauseButton = () => {
+  const handlePlayPauseButton = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation();
     if (isRunning) setIsRunning(false);
     else setIsRunning(true);
   };
 
   const listOfTimers = activities.map((activity, idx) => {
     return currentTimerIdx === idx ? (
-      <Timer
-        key={clickTimestamp + idx}
-        timer={activity}
-        nextTimer={nextTimer}
-        isRunning={isRunning}
-        selected={true}
-        handleClick={() => handleTimerSelect(idx)}
-        ref={(el: HTMLElement | null) => (timerRefs.current[idx] = el)}
-      />
+      <div
+        key={clickTimestamp + idx.toString()}
+        className="timerRow"
+        onClick={() => handleTimerSelect(idx)}
+      >
+        <PlayPauseButton
+          key={"playPauseButton" + clickTimestamp + idx.toString()}
+          ref={buttonRef}
+          handleClick={handlePlayPauseButton}
+          isRunning={isRunning}
+        />
+        <Timer
+          key={"timer" + clickTimestamp + idx.toString()}
+          timer={activity}
+          nextTimer={nextTimer}
+          isRunning={isRunning}
+          selected={true}
+          ref={(el: HTMLElement | null) => (timerRefs.current[idx] = el)}
+        />
+      </div>
     ) : (
-      <Timer
-        key={clickTimestamp + idx}
-        timer={activity}
-        nextTimer={nextTimer}
-        ref={(el: HTMLElement | null) => (timerRefs.current[idx] = el)}
-        handleClick={() => handleTimerSelect(idx)}
-      />
+      <div
+        key={clickTimestamp + idx.toString()}
+        className="timerRow"
+        onClick={() => handleTimerSelect(idx)}
+      >
+        <div
+          key={"spacer" + clickTimestamp + idx.toString()}
+          className="buttonSpacer"
+        ></div>
+        <Timer
+          key={"timer" + clickTimestamp + idx.toString()}
+          timer={activity}
+          nextTimer={nextTimer}
+          ref={(el: HTMLElement | null) => (timerRefs.current[idx] = el)}
+        />
+      </div>
     );
   });
 
-  return (
-    <>
-      <PlayPauseButton
-        ref={buttonRef}
-        handleClick={handlePlayPauseButton}
-        isRunning={isRunning}
-      />
-      {listOfTimers}
-    </>
-  );
+  return <>{listOfTimers}</>;
 };
 
 export default TimersList;

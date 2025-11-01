@@ -1,16 +1,19 @@
-.buttonIcon {
+.pauseIcon {
   border: none;
   background: none;
-  padding: 60px 0 0 0;
-  margin: 0 30px 0 0;
+  padding: 0;
+  margin: 0;
   width: fit-content;
   height: fit-content;
+  opacity: 0.2;
 }
 
-.buttonIcon svg {
+.pauseIcon svg {
   padding: 0;
   margin: 0;
   border: none;
   background: none;
-  transform: scale(0.7);
+  width: 70px;
+  height: 70px;
+  color: #300b06;
 }
